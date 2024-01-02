@@ -1,0 +1,13 @@
+.Footer_Container {
+   background-color: black;
+   height: 160px;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: center;
+ }
+ 
+ .Footer_Text {
+    color: white;
+    font-size: 18px;
+ }
