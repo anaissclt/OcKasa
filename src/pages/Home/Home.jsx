@@ -1,5 +1,15 @@
+// IMPORTS
+import './home.css'
+
+// ASSETS
+import Banner from '../../assets/home.png'
+
 function Home() {
-    return <div>Page d'accueil 🏡</div>
-  }
-  
-  export default Home
+  return (
+     <section>
+           <img  src={Banner} alt='Paysage' />
+     </section>
+  )
+}
+
+export default Home
