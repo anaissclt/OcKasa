@@ -1,21 +1,27 @@
-import { Link } from 'react-router-dom'
-import './footer.css'
+.Link {
+    color: #FF6060;
+    font-size: 24px;
+    padding-left: 60px;
+ }
 
-// ASSETS
-import LogoFooter from '../../assets/logo-footer.png'
-
-
-// Layout Footer
-function Footer() {
-   return (
-      <footer className='ContFooter'>
-         <Link to="/">
-            <img src={LogoFooter} alt='Logo de Kasa'/>
-         </Link>
-
-         <p className='FooterText'>© 2023 Kasa. All rights reserved</p>
-      </footer>
-   )
+ .Link.active {
+    text-decoration: underline;
  }
  
- export default Footer
+ .Header_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+ }
+
+ .Header_Link {
+   gap: 30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+ }
+
+ .Header_Logo {
+    width: 80%;
+ }
