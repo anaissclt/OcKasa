@@ -1,15 +1,17 @@
-// IMPORTS
-import './home.css'
+// COMPONENTS
+import Banner from '../../components/Banner/Banner';
+import Cardlocation from "../../components/Card/Card";
 
 // ASSETS
-import Banner from '../../assets/home.png'
+import home_img from '../../assets/home.png';
 
-function Home() {
+const Home = () => {
   return (
-     <section>
-           <img  src={Banner} alt='Paysage' />
-     </section>
-  )
+    <section>
+      <Banner image={home_img} text="Chez vous, partout et ailleurs" />
+      <Cardlocation />
+    </section>
+  );
 }
 
-export default Home
+export default Home;
