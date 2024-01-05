@@ -1,14 +1,12 @@
 // IMPORTS
-import "./about.css";
+import Banner from '../../components/Banner/Banner';
 
 // ASSETS
-import Banner from "../../assets/about.png";
+import about_img from "../../assets/about.png";
 
 function About() {
   return (
-    <section>
-      <img src={Banner} alt="Paysage" />
-    </section>
+    <Banner image={about_img} />
   );
 }
 
