@@ -6,7 +6,7 @@ import './card.css'
 // ASSETS
 import DATA from '../../assets/data.json'
 
-function Card() {
+const Card = () => {
    return (
       <section className='Card_Container'>
          {DATA.map((location) => (  //méthode map : créer une carte pour chaque élément
