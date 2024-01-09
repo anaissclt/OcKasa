@@ -6,7 +6,7 @@ import "./header.css";
 import Logo from "../../assets/logo-header.png";
 
 // Layout Header
-function Header() {
+const Header = () => {
   return (
     <nav className="Header_Container">
       <Link to="/">
@@ -24,6 +24,6 @@ function Header() {
       </div>
     </nav>
   );
-}
+};
 
 export default Header;
