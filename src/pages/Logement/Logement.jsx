@@ -1,4 +1,4 @@
-// Location.jsx
+// IMPORTS
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import DataLocation from '../../assets/data.json';
@@ -7,7 +7,7 @@ import Slideshow from '../../components/Slideshow/Slideshow';
 
 const Location = () => {
   const { id } = useParams(); // Récupère l'id du logement dans l'url
-  const logement = DataLocation.find(item => item.id === (id));
+  const logement = DataLocation.find(item => item.id === (id));  // Recherche dans les données en fonction de l'ID
 
   if (!logement) {
     return <ErrorPage />;
@@ -15,9 +15,9 @@ const Location = () => {
 
   return (
     <div>
+       <Slideshow pictures={logement.pictures} />
       <h1>{logement.title}</h1>
       <p>{logement.description}</p>
-      <Slideshow pictures={logement.pictures} />
     </div>
   );
 }
