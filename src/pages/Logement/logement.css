@@ -1,0 +1,113 @@
+.Logement_Container{
+    color: #FF6060;
+    margin: 60px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin: 20px 0;
+   }
+ }
+ 
+ .Logement_Information{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      width: 100%;
+   }
+ }
+ 
+ .Logement_Title{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 25px;
+   }
+ }
+ 
+ .Logement_Location{
+    margin: 0;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 13px;
+   }
+ }
+
+ .Logement_Tag_Ul{
+    padding: 0;
+    margin: 25px 0 0;
+ }
+ 
+ .Logement_Tag_Li{
+    font-size: 14px;
+    display: inline-block;
+    background-color: #FF6060;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 10px;
+    margin: 0 20px 10px 0;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding: 4px 10px;
+      margin: 0 15px 10px 0;
+   }
+ }
+
+ .Logement_Collapse {
+   display: flex;
+   gap: 10%;
+   @media (max-width: 768px) {
+      width: 100%;
+     display: flex;
+     flex-direction: column;
+   }
+ }
+ 
+.Logement_Owner{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   @media (max-width: 768px) {
+      margin: 10px 0 0 0;
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+.Logement_Owner_Img{
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   margin: 0 0 0 30px;
+   @media (max-width: 768px) {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+   }
+}
+
+.Logement_Owner_Name{
+   margin: 0;
+   width: 60px;
+   font-size: 18px;
+   
+   @media (max-width: 768px) {
+      width: 40px;
+      font-size: 13px;
+}
+}
+
+.Logement_Owner_Container{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   @media (max-width: 768px) {
+      margin-bottom: 0;
+   }
+}
