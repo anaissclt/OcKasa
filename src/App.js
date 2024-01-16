@@ -11,7 +11,7 @@ import Logement from "./pages/Logement/Logement";
 import Header from "./layouts/Header/Header";
 import Footer from "./layouts/Footer/Footer";
 
-// Style
+// STYLE
 import "./app.css";
 
 // Routes de l'application
