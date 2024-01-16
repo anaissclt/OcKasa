@@ -6,6 +6,12 @@
     border-radius: 30px;
     padding: 35px 0;
     margin: 50px 0;
+    @media (max-width: 768px) {
+      align-items: center;
+      background-color: white;
+      padding: 0 0;
+      margin: 0;
+   }
  }
  
  .Card {
@@ -13,6 +19,11 @@
     width: 340px;
     height: 340px;
     margin: 30px;
+    @media (max-width: 768px) {
+      width: 85vw;
+      height: 250px;
+      margin: 10px;
+   }
  }
  
  .Card_Image {
@@ -21,6 +32,11 @@
     height: 340px;
     border-radius: 15px;
     position: relative;
+    
+   @media (max-width: 768px) {
+      width: 85vw;
+      height: 250px;
+   }
  }
 
  .Card_background {
@@ -30,6 +46,9 @@
    border-radius: 15px;
    position: relative;
    bottom: 345px;
+   @media (max-width: 768px) {
+      bottom: 255px;
+   }
 }
  
  .Card_Title {
@@ -40,4 +59,8 @@
    bottom: 395px;
    left: 20px;
    margin: 0;
+
+   @media (max-width: 768px) {
+      bottom: 305px;
+   }
  }

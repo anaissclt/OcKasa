@@ -1,6 +1,8 @@
 // IMPORT
 import React from 'react';
 import PropTypes from 'prop-types'; // module PropTypes
+
+// STYLE
 import './banner.css';
 
 const Banner = ({ image, text }) => {
@@ -12,6 +14,7 @@ const Banner = ({ image, text }) => {
   );
 };
 
+// PropTypes définit les types attendus pour les props
 Banner.propTypes = {
   image: PropTypes.string.isRequired,
   text: PropTypes.string,

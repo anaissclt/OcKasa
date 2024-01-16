@@ -3,6 +3,12 @@
     width: 90%;
     margin: 40px auto;
     border-radius: 5px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin:  auto; 
+        width: 100%;
+    }
+
 }
 
 .Collapse_Title {
@@ -19,11 +25,17 @@
 .arrow_up {
     cursor: pointer;
     transform: rotate(0deg);
+    @media screen and (max-width: 768px){
+        width: 12px;     
+    }
 }
 
  .arrow_down {
     cursor: pointer;
     transform: rotate(180deg);
+    @media screen and (max-width: 768px){
+        width: 12px;     
+    }
 }
 
 .Collapse_Content {

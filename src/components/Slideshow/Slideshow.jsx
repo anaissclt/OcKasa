@@ -1,5 +1,7 @@
 // IMPORTS
 import React, { useState } from "react";
+
+// STYLE
 import "./slideshow.css";
 
 // ASSETS
@@ -8,7 +10,6 @@ import arrowleft from "../../assets/arrow-left.png";
 
 const Slideshow = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   
   const NextSlide = () => {
     setCurrentIndex((Next) => (Next === pictures.length - 1 ? 0 : Next + 1));

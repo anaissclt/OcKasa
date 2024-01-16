@@ -8,6 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 768px) {
+      margin: 20px 0;
+      height: 150px;
+   }
   }
   
   .Banner_Img {
@@ -16,6 +20,9 @@
     border-radius: 30px;
     object-fit: cover;
     filter: brightness(0.8);
+    @media (max-width: 768px) {
+      width: 95%;
+ }
   }
   
   .Banner_Text {
@@ -23,4 +30,8 @@
     color: white;
     font-size: 40px;
     text-align: center;
+
+   @media (max-width: 768px) {
+    font-size: 25px;
+ }
   }

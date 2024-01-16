@@ -1,7 +1,8 @@
 // IMPORTS
 import { Link } from 'react-router-dom'
-import './card.css'
 
+// STYLE
+import './card.css'
 
 // ASSETS
 import DATA from '../../assets/data.json'

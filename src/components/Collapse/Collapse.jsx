@@ -1,6 +1,8 @@
 // IMPORTS
 import React from "react";
 import { useState } from "react";
+
+// STYLE
 import "./collapse.css";
 
 //ASSETS
@@ -21,9 +23,15 @@ const Collapse = ({ title, content }) => {
         />
       </h3>
       <div className={toggle ? "Collapse_Content" : "Collapse_Content_None"}>
-        {Array.isArray(content)
-          ? content.map((index) => <p key={index}></p>)
-          : content}
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        ) : (
+          content
+        )}
       </div>
     </section>
   );

@@ -10,17 +10,26 @@
     height: 415px;
     object-fit: cover;
     border-radius: 15px;
+    @media (max-width: 768px) {
+      height: 255px;
+   }
  }
 
  .Slider_Left {
     position: absolute;
     cursor: pointer;
     left: 2%;
+    @media (max-width: 768px) {
+      width: 5%;
+   }
  }
  .Slider_Right {
     position: absolute;
     cursor: pointer;
     right: 2%;
+    @media (max-width: 768px) {
+      width: 5%;
+   }
  }
  .Slide_Number {
     position: absolute;
