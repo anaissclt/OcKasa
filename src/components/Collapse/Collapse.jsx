@@ -24,7 +24,7 @@ const Collapse = ({ title, content }) => {
       </h3>
       <div className={toggle ? "Collapse_Content" : "Collapse_Content_None"}>
         {Array.isArray(content) ? (
-          <ul>
+          <ul className="Collapse_List">
             {content.map((equipment, index) => (
               <li key={index}>{equipment}</li>
             ))}
