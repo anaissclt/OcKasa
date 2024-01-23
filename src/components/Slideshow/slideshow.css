@@ -36,4 +36,7 @@
     bottom: 0%;
     color: white;
     font-weight: 700;
+    @media (max-width: 768px) {
+      display: none;
+   }
  }

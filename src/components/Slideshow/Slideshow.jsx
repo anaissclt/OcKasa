@@ -9,7 +9,7 @@ import arrowright from "../../assets/arrow-right.png";
 import arrowleft from "../../assets/arrow-left.png";
 
 const Slideshow = ({ pictures }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // currentIndex = index de l'image actuelle
   
   const NextSlide = () => {
     setCurrentIndex((Next) => (Next === pictures.length - 1 ? 0 : Next + 1));
