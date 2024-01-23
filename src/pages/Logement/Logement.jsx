@@ -26,10 +26,6 @@ const Location = () => {
     }
   }, [logement, navigate]);
 
-  if (!logement) {
-    return null;
-  }
-
   return (
     <>
       <Slideshow pictures={logement.pictures} />
